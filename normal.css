@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.bar{
+    width: 0.9vw;
+    height: 0.9vw;
+    background: red;
+    margin: 0.3vw;
+    border-radius: 10px;
+}
+
+
+
+/*-----------------------------------------*/
+.bar_4{
+    animation: bar_4-6 1s infinite alternate;
+}
+
+.bar_6{
+    animation: bar_4-6 1s infinite alternate;
+}
+
+@keyframes bar_4-6{
+    to{height: 8vw;}
+}
+
+/*-----------------------------------------*/
+.bar_3{
+    animation: bar_3-7 1s infinite alternate;
+}
+
+.bar_7{
+    animation: bar_3-7 1s infinite alternate;
+}
+
+@keyframes bar_3-7{
+    to{
+        height: 7vw;
+        margin-top: -2%;
+    }
+}
+
+/*-----------------------------------------*/
+.bar_5{
+    animation: bar_5 1s infinite alternate;
+}
+
+@keyframes bar_5{
+    to{
+        margin-top: 8%;
+        height: 8vw;
+    }
+}
+
+/*-----------------------------------------*/
+.bar_8{
+    animation: bar_2-8 1s infinite alternate;
+}
+
+.bar_2{
+    animation: bar_2-8 1s infinite alternate;
+}
+
+@keyframes bar_2-8{
+    to{
+        height: 5vw;
+    }
+}
+
+/*-----------------------------------------*/
+.bar_1{
+    animation: bar_1-9 1s infinite alternate;
+}
+
+.bar_9{
+    animation: bar_1-9 1s infinite alternate;
+}
+
+@keyframes bar_1-9{
+    to{
+        height: 2vw;
+        margin-top: 12%;
+    }
+}

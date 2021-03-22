@@ -1,0 +1,139 @@
+:root{
+    --seconds: 2s /*Animation velocity [RECOMENDED: Between 1 and 2] If want more edit manually the delays*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+    height: 9vw;
+}
+
+.bar{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 0.9vw;
+    height: 0.9vw;
+    background: red;
+    margin: 0.3vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+
+
+/*-----------------------------------------*/
+.bar_4{
+    animation: bar_4 var(--seconds) infinite alternate;
+    animation-delay: 0.6s;
+}
+
+.bar_6{
+    animation: bar_6 var(--seconds) infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes bar_4{
+    to{height: 8vw;}
+}
+
+@keyframes bar_6{
+    to{height: 8vw;}
+}
+
+/*-----------------------------------------*/
+.bar_3{
+    animation: bar_3 var(--seconds) infinite alternate;
+    animation-delay: 0.4s;
+}
+
+.bar_7{
+    animation: bar_7 var(--seconds) infinite alternate;
+    animation-delay: 1.2s;
+}
+
+@keyframes bar_3{
+    to{
+        margin-top: -7%;
+        height: 7vw;
+    }
+}
+
+@keyframes bar_7{
+    to{
+        margin-top: -7%;
+        height: 7vw;
+    }
+}
+
+/*-----------------------------------------*/
+.bar_5{
+    animation: bar_5 var(--seconds) infinite alternate;
+    animation-delay: 0.8s;
+}
+
+@keyframes bar_5{
+    to{
+        margin-top: 8%;
+        height: 8vw;
+    }
+}
+
+/*-----------------------------------------*/
+.bar_8{
+    animation: bar_8 var(--seconds) infinite alternate;
+    animation-delay: 1.4s;
+}
+
+.bar_2{
+    animation: bar_2 var(--seconds) infinite alternate;
+    animation-delay: 0.2s;
+}
+
+@keyframes bar_2{
+    to{
+        margin-top: -8%;
+        height: 5vw;
+    }
+}
+
+@keyframes bar_8{
+    to{
+        margin-top: -8%;
+        height: 5vw;
+    }
+}
+/*-----------------------------------------*/
+.bar_1{
+    animation: bar_1 var(--seconds) infinite alternate;
+}
+
+.bar_9{
+    animation: bar_9 var(--seconds) infinite alternate;
+    animation-delay: 1.6s;
+}
+
+@keyframes bar_1{
+    to{
+        margin-top: -9%;
+        height: 2vw;
+    }
+}
+
+@keyframes bar_9{
+    to{
+        margin-top: -9%;
+        height: 2vw;
+    }
+}
